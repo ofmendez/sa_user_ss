@@ -2,6 +2,7 @@ version: '2'
 services:
   sa_user_ss_db:
     image: mysql
+    command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3310:3306"
     environment:
